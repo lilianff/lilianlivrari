@@ -1,0 +1,96 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <title>Livraria Online</title>
+</head>
+<header>
+<body class="bg">
+   
+    <center><h1> Bem-vindo(a) a Livraria Falcão</h1>
+    <p>Insira o valor total da sua compra: </p>
+    <input type="number" id="valorCompra" placeholder="Insira o valor em R$">
+    <button onclick="calcularDesconto()">Calcular Desconto</button>
+    <p>Desconto aplicado: <span id="desconto"></span></p>
+    </center> </header>
+    <script>
+        function calcularDesconto()  {
+            const valorCompra = parseFloat (document.getElementById('valorCompra').value)
+
+            let desconto = 0;
+
+            if (valorCompra > 200) {
+                descontro = 0.2; // 20%
+            } else if (valorCompra > 100){
+                desconto = 0.1; // 10%
+            }
+        const valorDesconto = valorCompra * desconto;
+        document.getElementById('desconto').textContent = `R$ ${valorDesconto.toFixed(2)}`;
+        }
+       
+    </script>
+    <ul class="produtos">
+
+        <li>
+           <h2> O lado feio do amor</h2>
+          <img src="img1.webp">
+          <p class="produto-descricao"> </p>
+         <h2 class="preco-produto">R$46,67</h2>
+       
+         </li>
+         <li>
+            <h2> Até o verão terminar</h2>
+           <img src="img2.jpg">
+           <p class="produto-descricao">  </p>
+          <h2 class="preco-produto">R$49,40</h2>
+       
+          </li>
+          <li>
+             <h2> Os sete maridos de evelyn hugo</h2>
+            <img src="img3.jpg">
+            <p class="produto-descricao"> </p>
+           <h2 class="preco-produto">R$53,33</h2>
+           <li>
+           <h2> Enquanto eu não te encontro</h2>
+            <img src="img4.jpg">
+            <p class="produto-descricao"> </p>
+           <h2 class="preco-produto">R$27,00</h2>
+        </li>
+        <li>
+            <h2> Assim que acaba </h2>
+             <img src="img5.jpg">
+             <p class="produto-descricao"> </p>
+            <h2 class="preco-produto">R$31,00</h2>
+         </li>
+         <li>
+            <h2>Relacionamentos</h2>
+             <img src="img6.jpg">
+             <p class="produto-descricao"> </p>
+            <h2 class="preco-produto">R$51,01</h2>
+         </li>
+        <center> <form class="uiui">
+            Defina seu nível de satisfação<br>
+            pouco satisfeito
+            <input type="range" name="satisfacao" min="0" max="10">
+            muito satisfeito
+       </form></center>
+         <center><input type="submit" value="COMPRAR" class="enviar"></center>
+          </html>
+           </li> </ul>
+           <footer>
+            <img src="ima.png" alt="AA" class="oo">
+            <p class="copyright">&copy; Doce Verão - 2023</p>
+          </footer>
+   
+         
+</body>
+</html>

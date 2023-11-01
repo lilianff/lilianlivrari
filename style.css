@@ -1,0 +1,111 @@
+.bg{
+    background-image: url(img7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    color:rgb(28, 6, 109);
+}
+p{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+header{
+    background: cadetblue;
+}
+nav{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+nav li{
+ display: inline;
+ margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #FFD700;
+  }
+  nav a:hover{
+    color: #FF1493;
+    text-decoration: underline;
+  }
+ 
+  .produtos{
+    width: 950px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  .produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid palevioletred;
+    border-radius: 20px;
+
+  }
+  .produtos li:hover {
+    border-color: pink;
+  }
+ 
+  .produtos li:active {
+    border-color:#EE82EE ;
+  }
+ 
+  .produtos li: hover h2 {
+    font-size: 25px;
+ 
+  }
+
+  ul, img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    color:rgb(131, 14, 111);
+}
+footer {
+    text-align: center;
+    background-color: cadetblue;
+    padding: 2px 0;
+  }
+  .uiui{
+    font-family: 'Barlow Condensed', sans-serif;
+    color:lightblue;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .copyright{
+    color: white;
+    font-size: 13px;
+    margin: 1px ;
+  }
+
+  .oo{
+    height: 250px;
+  }
+  .enviar{
+    width: 510px;
+    padding: 15px 0;
+    background: #DC143C;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+  }
+  .enviar:hover{
+    background: #EE82EE;
+  background: pink
+  }
